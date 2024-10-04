@@ -1,3 +1,10 @@
+
+.logo{
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
+
+}
 .NavBar{
     list-style-type: none;
     margin: 0;
@@ -90,3 +97,76 @@
     padding: 20px;
     max-height: 500px;
   }
+
+.s1 img,
+.s2 img,
+.s3 img {
+      max-width: 100%;
+      height: auto;
+  }
+
+
+  @media screen and (max-width: 800px) {
+    .container {
+        margin: 1em 2em;
+      }
+     .NavBar {
+        display: none;
+    }
+    .s1 img {
+        max-width: 75%;
+        height: auto;
+    }
+    h2 {
+        font-size: 24px;
+    }
+    p {
+        font-size: 20px;
+    }
+    .grid {
+     display: grid;
+     grid-template-columns: repeat(2, 1fr); 
+     gap: 25px;
+     grid-auto-rows: minmax(100px, auto);
+    }
+
+    .one {
+        overflow-y: scroll;
+        grid-column: 1;
+        grid-row: 1;
+        background-color:#182b49;
+        color: white;
+        padding: 20px;
+        max-height: 500px;
+      }
+    .two {
+        overflow-y: scroll;
+        grid-column: 2;
+        grid-row: 1;
+        background-color:#182b49;
+        color: white;
+        padding: 20px;
+        max-height: 500px;
+      }
+    .three {
+        overflow-y: scroll;
+        grid-column: 1;
+        grid-row: 2;
+        background-color:#182b49;
+        color: white;
+        padding: 20px;
+        max-height: 500px;
+    }
+    .four {
+        overflow-y: scroll;
+        grid-column: 2;
+        grid-row: 2;
+        background-color:#182b49;
+        color: white;
+        padding: 20px;
+        max-height: 500px;
+      }
+
+
+}
+  
